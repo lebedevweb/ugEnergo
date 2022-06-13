@@ -1,0 +1,14 @@
+include components/head
+body
+	include components/header
+	main
+		include components/page-header
+		div(class="page_body container")
+			h1(class="page_title")
+				span(class="text-gradient") Новости
+
+			include components/news
+
+			include components/pagination
+
+	include components/footer

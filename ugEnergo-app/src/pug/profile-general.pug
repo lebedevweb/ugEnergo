@@ -1,0 +1,46 @@
+include components/head
+body
+	include components/header-back
+	main(class="profile")
+		div(class="profile_photo")
+			include ../images/profile/user.svg
+			p Иванов Иван Иванович
+
+		div(class="profile_content")
+			h1(class="profile_content_title") Общая информация
+			h2(class="profile_content_subtitle") Суммы к оплате:
+			ul(class="profile_content_paid")
+				li
+					p К оплате за прошлые периоды:
+					p(class="text-bold") 60,76
+						span  &#8381;
+				li
+					p Предварительно начислено:
+					p(class="text-bold") 3 344,91
+						span  &#8381;
+				li
+					p Рекомендовано к оплате:
+					p(class="text-bold") 3 136,92
+						span  &#8381;
+				li
+					p Долг пени:
+					p(class="text-bold") 40,84
+						span  &#8381;
+				li
+					p Итого к оплате с пени:
+					p(class="text-bold") 3 177,76
+						span  &#8381;
+
+			h2(class="profile_content_subtitle") Последний платеж:
+			ul(class="profile_content_paid")
+				li
+					p 19.07.2021:
+					p(class="text-bold") 3 511,45
+						span  &#8381;
+
+
+
+
+
+
+	include components/footer

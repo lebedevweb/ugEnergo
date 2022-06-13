@@ -1,0 +1,71 @@
+.header
+	position: fixed
+	left: 0
+	right: 0
+	top: 0
+	display: flex
+	align-items: center
+	background-color: $light
+	padding: 8px 38px 8px 20px
+	box-shadow: 0px -20px 15px 15px rgba(119, 119, 119, 0.5)
+	z-index: 1000
+
+	&_text
+		font-size: 18px
+		box-sizing: border-box
+		margin-right: auto
+		padding-top: 11px
+		padding-bottom: 11px
+
+		@media only screen and (max-width: 420px)
+			font-size: 14px
+			padding-top: 13px
+			padding-bottom: 13px
+
+	&_notify
+		position: relative
+		display: block
+		width: 18px
+		margin-right: auto
+
+		& > svg
+			fill: $primary
+
+		&_icon
+			position: absolute
+			top: 3px
+			right: 0
+			width: 5px
+			height: 5px
+			background-color: #DC73BF
+			border: 2px solid $light
+			border-radius: 50%
+
+	&_bell
+		position: relative
+		width: 18px
+
+		& > svg
+			fill: $primary
+
+		&_icon
+			position: absolute
+			top: 1px
+			right: -1px
+			width: 5px
+			height: 5px
+			background-color: #DC73BF
+			border: 2px solid $light
+			border-radius: 50%
+
+
+	& > svg
+		width: 37px
+		margin-right: auto
+		fill: $primary
+
+	&_btns
+		display: flex
+		justify-content: space-between
+		margin-bottom: 15px
+

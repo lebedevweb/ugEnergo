@@ -1,0 +1,14 @@
+include components/head
+body(class="login")
+	div()
+		h1 Авторизация
+		p Войдите в свой аккаунт
+		form(class="form")
+			div(class="form_phone")
+				label +7
+				input(type="number" required)
+			input(type="password" required)
+			div(class="form_btn")
+				button(class="btn btn_primary" type="submit") Войти
+				a(class="btn btn_link" href="signup.html") Зарегистрироваться
+

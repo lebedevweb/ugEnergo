@@ -1,0 +1,76 @@
+.news
+	display: flex
+	flex-wrap: wrap
+	margin-bottom: 40px
+
+	&_list
+		position: relative
+		display: flex
+		box-sizing: border-box
+		flex-direction: column
+		justify-content: space-between
+		width: 31%
+		min-height: 170px
+		background: $gradient-first
+		box-shadow: 0 1px 5px rgba(119, 119, 119, 0.25)
+		border-radius: 10px
+		padding: 20px 10px 10px
+		margin-right: 3.5%
+		margin-bottom: 40px
+
+		&:nth-child(3n)
+			margin-right: 0
+
+		@media only screen and (max-width: 1199px)
+			width: 48%
+			margin-right: 4%
+
+			&:nth-child(3n)
+				margin-right: 4%
+
+			&:nth-child(2n)
+				margin-right: 0
+
+		@media only screen and (max-width: 767px)
+			width: 100%
+			margin-right: 0
+
+			&:nth-child(3n)
+				margin-right: 0
+
+
+	&_title
+		color: $light
+		font-size: 24px
+		margin-bottom: 20px
+
+		@media only screen and (max-width: 1680px)
+			font-size: 21px
+
+		@media only screen and (max-width: 1199px)
+			font-size: 18px
+
+		@media only screen and (max-width: 767px)
+			font-size: 16px
+
+	&_time
+		color: $grey
+		font-size: 18px
+
+		@media only screen and (max-width: 1680px)
+			font-size: 18px
+
+		@media only screen and (max-width: 1199px)
+			font-size: 15px
+
+		@media only screen and (max-width: 767px)
+			font-size: 14px
+
+	&_link
+		position: absolute
+		display: block
+		bottom: 15px
+		right: 10px
+		width: 42px
+		height: 25px
+		fill: $light

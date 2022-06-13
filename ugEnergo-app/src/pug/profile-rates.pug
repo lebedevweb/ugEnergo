@@ -1,0 +1,52 @@
+include components/head
+body
+	include components/header-back
+	main(class="profile")
+		div(class="profile_photo")
+			include ../images/profile/user.svg
+			p Иванов Иван Иванович
+
+		div(class="profile_content")
+			h1(class="profile_content_title") Тарифы
+			p(class="profile_content_period") Месяц
+				span(class="text-underline")  Август 2021
+			table(class="profile_content_table")
+				thead
+					tr
+						th Услуга
+						th Ед. изм.
+						th Тариф, руб.
+							br
+							| за ед. изм.
+				tbody
+					tr
+						th Водоотведение
+						th m
+							span &#179;
+						th 10.55
+					tr
+						th Горячее водоснабжение
+						th m
+							span &#179;
+						th 77,76
+					tr
+						th Холодное водоснабжение
+						th m
+							span &#179;
+						th 18,30
+					tr
+						th Отопление
+						th ГКАЛ
+						th 853,49
+
+
+
+
+
+
+
+
+
+
+
+	include components/footer

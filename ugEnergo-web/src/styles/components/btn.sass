@@ -1,0 +1,31 @@
+.btn
+  box-sizing: border-box
+  position: relative
+  display: inline-block
+  //width: 100%
+  //max-width: 320px
+  font-size: 16px
+  text-align: center
+  text-decoration: none
+  border: none
+  border-radius: 30px
+  background-color: transparent
+  transition: ease-out color .3s, ease-out background-color .3s, ease-out border .3s, ease-out opacity .3s
+  cursor: pointer
+  padding: 16px 40px
+
+  &:hover
+    opacity: .7
+
+  &_primary
+    color: $light
+    background-color: $primary
+
+  &_light
+    color: $primary
+    font-size: 16px
+    background-color: $light
+
+  &_gradient
+    color: $light
+    background: $gradient-first

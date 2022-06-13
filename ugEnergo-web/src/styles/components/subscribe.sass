@@ -1,0 +1,27 @@
+.subscribe
+	display: flex
+
+	@media only screen and (max-width: 767px)
+		flex-wrap: wrap
+		justify-content: center
+		max-width: 400px
+		margin-left: auto
+		margin-right: auto
+
+
+	&_input
+		font-size: 18px
+		width: 100%
+		border-radius: 25px
+		padding: 14px 20px
+		margin-right: 10px
+
+		@media only screen and (max-width: 767px)
+			margin-bottom: 20px
+
+		&::placeholder
+			color: $primary
+			opacity: .6
+
+		&:focus::placeholder
+			color: transparent

@@ -1,0 +1,38 @@
+include components/head
+body
+	include components/header-back
+	main(class="profile")
+		div(class="profile_photo")
+			include ../images/profile/user.svg
+			p Иванов Иван Иванович
+
+		div(class="profile_content")
+			h1(class="profile_content_title") Личная информация
+			ul(class="profile_content_info")
+				li
+					h2 Адрес
+					p 620144, Свердловская область, г. Екатеринбург, ул. Радищева,
+
+				li
+					h2 Телефон
+					p +79673789752
+
+				li
+					a(href="#0") Общая информация
+
+				li
+					a(href="#0") История платежей
+
+				li
+					a(href="#0") Тарифы
+
+				li
+					a(href="#0") Выйти
+
+
+
+
+
+
+
+	include components/footer

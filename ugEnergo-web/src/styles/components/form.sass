@@ -1,0 +1,54 @@
+.form
+	display: flex
+	flex-wrap: wrap
+	justify-content: space-around
+	max-width: 830px
+	margin-left: auto
+	margin-right: auto
+
+	&_column
+		width: 47%
+		margin-bottom: 50px
+
+		@media only screen and (max-width: 767px)
+			width: 100%
+
+	&_input,
+	&_textarea
+		box-sizing: border-box
+		display: block
+		width: 100%
+		font-family: $font-title
+		font-weight: 500
+		font-size: 18px
+		border: 1px solid $primary
+		border-radius: 25px
+		padding: 14px 20px
+		transition: box-shadow .15s ease-in-out
+
+		&:nth-child(n+2)
+			margin-top: 20px
+
+		&::placeholder
+			color: $primary
+			opacity: .6
+
+		&:focus
+			box-shadow: 0 0 0 .25rem rgba($primary,.25)
+
+			&::placeholder
+				color: transparent
+
+	&_textarea
+		resize: none
+		height: 100%
+
+		scrollbar-width: none
+		scrollbar-color: $primary transparent
+
+		&::-webkit-scrollbar
+			width: 0
+
+
+
+

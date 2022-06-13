@@ -1,0 +1,111 @@
+.pagination
+	display: flex
+	justify-content: center
+
+	&_list
+		display: flex
+		flex-wrap: wrap
+		align-items: center
+		justify-content: center
+		list-style: none
+		font-family: $font-title
+		font-size: 18px
+
+		@media only screen and (max-width: 1680px)
+			font-size: 18px
+
+		@media only screen and (max-width: 1199px)
+			font-size: 15px
+
+		@media only screen and (max-width: 767px)
+			font-size: 14px
+
+		& a
+			text-decoration: none
+			transition: opacity .3s ease-out
+
+			&:hover
+				opacity: .6
+
+	&_nav
+		display: block
+
+		@media only screen and (max-width: 767px)
+			margin-bottom: 20px
+
+		& > .disabled
+			display: table-cell
+			height: 40px
+			vertical-align: middle
+			cursor: default
+			opacity: .6
+
+			@media only screen and (max-width: 767px)
+				height: 30px
+
+	&_arrow
+		display: block
+
+		@media only screen and (max-width: 767px)
+			margin-bottom: 20px
+
+		& > a
+			display: table-cell
+			text-decoration: none
+			height: 40px
+			width: 60px
+			text-align: center
+			vertical-align: middle
+
+			@media only screen and (max-width: 767px)
+				width: 50px
+				height: 30px
+
+		& > .disabled
+			display: table-cell
+			height: 40px
+			width: 60px
+			text-align: center
+			vertical-align: middle
+			cursor: default
+			opacity: .6
+
+			@media only screen and (max-width: 767px)
+				width: 50px
+				height: 30px
+
+	&_item
+		display: block
+		align-items: center
+		justify-content: center
+
+		@media only screen and (max-width: 767px)
+			margin-bottom: 20px
+
+		& > .current
+			box-sizing: border-box
+			display: table-cell
+			width: 40px
+			height: 40px
+			text-align: center
+			vertical-align: middle
+			border: 2px solid $primary
+			border-radius: 50%
+
+			@media only screen and (max-width: 767px)
+				width: 30px
+				height: 30px
+
+		& > a
+			display: table-cell
+			width: 40px
+			height: 40px
+			text-align: center
+			vertical-align: middle
+
+			@media only screen and (max-width: 767px)
+				width: 30px
+				height: 30px
+
+
+

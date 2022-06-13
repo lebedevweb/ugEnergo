@@ -1,0 +1,83 @@
+include components/head
+body
+	include components/header-back
+	main(class="request")
+		header(class="header_btns")
+			a(class="btn btn_primary") В процессе
+			a(class="btn btn_outline") Выполнено
+
+		div
+			ul(class="request_list")
+				li(class="request_item")
+					a(class="request_link" href="#0")
+						div(class="request_icon")
+							include ../images/requests/message.svg
+							p №
+								span 6
+						div(class="request_content")
+							time 11.04.2021
+							h2 Платные услуги УК
+							p(class="success") Одобрено
+
+				li(class="request_item")
+					a(class="request_link" href="#0")
+						div(class="request_icon")
+							include ../images/requests/message.svg
+							p №
+								span 5
+						div(class="request_content")
+							time 11.04.2021
+							h2 Бесплатные услуги УК
+							p(class="rejected") Отклонена
+
+				li(class="request_item")
+					a(class="request_link" href="#0")
+						div(class="request_icon")
+							include ../images/requests/message.svg
+							p №
+								span 4
+						div(class="request_content")
+							time 11.04.2021
+							h2 Бесплатные услуги УК
+							p(class="process") В процессе
+
+				li(class="request_item")
+					a(class="request_link" href="#0")
+						div(class="request_icon")
+							include ../images/requests/message.svg
+							p №
+								span 3
+						div(class="request_content")
+							time 11.04.2021
+							h2 Платные услуги УК
+							p(class="success") Одобрено
+
+				li(class="request_item")
+					a(class="request_link" href="#0")
+						div(class="request_icon")
+							include ../images/requests/message.svg
+							p №
+								span 2
+						div(class="request_content")
+							time 11.04.2021
+							h2 Бесплатные услуги УК
+							p(class="rejected") Отклонена
+
+				li(class="request_item")
+					a(class="request_link" href="#0")
+						div(class="request_icon")
+							include ../images/requests/message.svg
+							p №
+								span 1
+						div(class="request_content")
+							time 11.04.2021
+							h2 Бесплатные услуги УК
+							p(class="process") В процессе
+
+
+
+
+
+
+
+	include components/footer

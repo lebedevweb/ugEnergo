@@ -1,0 +1,32 @@
+include components/head
+body(class="main")
+	include components/header
+	main
+		a(class="main_link" href="#0")
+			img(src="/images/main/cat.png")
+			div(class="main_link_row")
+				div(class="main_link_description")
+					h2(class="main_link_title") Последняя новость
+					time(class="main_link_time" datetime="2021-07-18 00:00") 18.07.2021
+				include ../images/main/arrow.svg
+
+		a(class="main_link" href="#0")
+			img(src="/images/main/carnations.png")
+			div(class="main_link_row")
+				div(class="main_link_description")
+					h2(class="main_link_title") Последнее объявление
+					time(class="main_link_time" datetime="2021-07-18 00:00") 18.07.2021
+				include ../images/main/arrow.svg
+
+		a(class="main_link" href="#0")
+			img(src="/images/main/pc.png")
+			div(class="main_link_row")
+				div(class="main_link_description")
+					h2(class="main_link_title") Последние платежи
+					time(class="main_link_time" datetime="2021-07-18 00:00") 18.07.2021
+				include ../images/main/arrow.svg
+
+
+
+
+	include components/footer

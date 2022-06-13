@@ -1,0 +1,35 @@
+include components/head
+body
+	include components/header-notify
+	main(class="notify")
+		ul(class="notify_list")
+			li(class="notify_item")
+				div(class="notify_row")
+					div
+						input(class="checkbox-main notify_input" type="checkbox" id="all" title="Выбрать все")
+						label(for="all") Выбрать все
+					div(class="notify_delete")
+						include ../images/delete.svg
+			li(class="notify_item")
+				input(id="id1" class="checkbox notify_input" type="checkbox")
+				label(class="notify_row" for="id1")
+					p Вход в аккаунт
+					p 23:00, 18.07.21
+			li(class="notify_item")
+					input(id="id2" class="checkbox notify_input" type="checkbox")
+					label(class="notify_row" for="id2")
+						p Вход в аккаунт
+						p 23:00, 18.07.21
+			li(class="notify_item")
+				input(id="id3" class="checkbox notify_input" type="checkbox")
+				label(class="notify_row" for="id3")
+					p Вход в аккаунт
+					p 23:00, 18.07.21
+
+
+
+
+
+
+
+	include components/footer

@@ -1,0 +1,44 @@
+include components/head
+body
+	include components/header-back
+	main(class="profile")
+		div(class="profile_photo")
+			include ../images/profile/user.svg
+			p Иванов Иван Иванович
+
+		div(class="profile_content")
+			h1(class="profile_content_title") История платежей
+			p(class="profile_content_period") Период с
+				span(class="text-underline")  01.07.21
+				|  по
+				span(class="text-underline")  19.08.21
+			table(class="profile_content_table")
+				thead
+					tr
+						th Тип
+						th Дата платежа
+						th Номер платежа
+						th Сумма
+				tbody
+					tr
+						th Оплата
+						th 19.07.2021
+						th 3470324779
+						th 3 511,45
+					tr
+						th Оплата
+						th 21.07.2021
+						th 3470635846
+						th 3 327,12
+
+
+
+
+
+
+
+
+
+
+
+	include components/footer

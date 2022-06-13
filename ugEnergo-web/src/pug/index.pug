@@ -1,0 +1,139 @@
+include components/head
+body
+	include components/header
+	main(class="index")
+		h1(class="sr-only") ЮГ ЭНЕРГО Управляющая компания
+		div(class="index_main" )
+			div(class="container")
+				include components/topcontacts
+
+				include components/topslider
+
+				ul(class="index_main_icons")
+					li(class="index_main_icon")
+						a(href="#0")
+							span(class="sr-only") Подпись
+							include ../images/index/bullet-list.svg
+
+					li(class="index_main_icon")
+						a(href="#0")
+							span(class="sr-only") Подпись
+							include ../images/index/document.svg
+		div(class="index_sliders")
+			div(class="index_sliders_border")
+			div(class="container")
+				h2(class="index_sliders_title")
+					span(class="text-gradient") Последние
+						b  Hовости
+
+				include components/slider-news
+				div(class="index_sliders_link")
+					a(class="text-gradient" href="#0") Все новости
+
+			div(class="container")
+				h2(class="index_sliders_title")
+					span(class="text-gradient")
+						b Объявления
+
+				include components/slider-notifications
+
+				div(class="index_sliders_link")
+					a(class="text-gradient" href="#0") Все объявления
+		div(class="index_links")
+			div(class="container")
+				h2(class="index_links_title") Раскрытие информации
+				ul(class="index_links_list")
+					li(class="index_links_item")
+						a(href="#0") Форма 1.1 Общая информация об управляющей организации
+
+					li(class="index_links_item")
+						a(href="#0") Форма 1.2 Сведения об основных показателях финансово-хозяйственной деятельности управляющей организации
+
+					li(class="index_links_item")
+						a(href="#0") Форма 1.3 Информация о привлечении к административной отвественности за нарушения в сфере управления многоквартирными домоми
+
+					li(class="index_links_item")
+						a(href="#0") Форма 1.4 Перечень многоквартирных домов, управление которыми осуществляет управляющая организация
+
+					li(class="index_links_item")
+						a(href="#0") Форма 1.5 Перечень домов, в отношении которых договоры управления были расторгнуты
+
+					li(class="index_links_item")
+						a(href="#0") Форма 2.1 - 2.8 по домам
+
+					li(class="index_links_item")
+						a(href="#0") Общая информация
+
+					li(class="index_links_item")
+						a(href="#0") Информация о МКД
+
+				h2(class="index_links_title") Поставщики
+				ul(class="index_links_list")
+					li(class="index_links_item")
+						a(href="#0") МУП "Водоканал"
+					li(class="index_links_item")
+						a(href="#0") ПАО "Т-плюс"
+					li(class="index_links_item")
+						a(href="#0") АО "Екатеринбургэнергосбыт"
+
+			div(class="index_links_btn")
+				a(class="btn btn_light" href="#0") Тарифы и нормативы
+		div(class="index_info container row")
+			section(class="index_info_column")
+				div(class="index_info_title")
+					div(class="index_info_icon")
+						include ../images/index/question.svg
+					h2 Вопрос - ответ
+
+				h3(class="index_info_subtitle") Что такое "Текущий ремонт"?
+				p(class="index_info_text") В перечень работ, относящихся к текущему ремонту жилых домов входит: - Устранение мелких деформаций фундаментов, усиление, восстановление поврежденных участков фундаментов, вентиляционных продухов, отмостки и входы в подвалы. - Герметизация стыков, заделка и восстановление архитектурных элементов стен и фасадов; ремонт и окраска фасадов. Частичная смена отдельных элементов перекрытий; заделка швов и трещин; укрепление и окраска перекрытий. - Устранение неисправностей стальных и других кровель (крыш), замена водосточных труб; ремонт гидроизоляции, утепления и вентиляции крыш. - Восстановление или замена отдельных участков и элементов лестниц, балконов, крылец (зонты-козырьки) над входами в подъезды, подвалы, над балконами верхних этажей. - Установка, замена и восстановление работоспособности отдельных элементов внутренних систем центрального отопления, включая домовые котельные. - Установка, замена и восстановление работоспособности отдельных элементов внутренних систем водопроводов и канализации, горячего водоснабжения, включая насосные установки в жилых зданиях. - Установка, замена и восстановление работоспособности электроснабжения здания за исключением внутриквартирных устройств и приборов, кроме электроплит. - Ремонт и восстановление разрушенных участков тротуаров, проездов, дорожек, отмосток ограждений и оборудования спортивных, хозяйственных площадок и площадок для отдыха.
+
+				a(class="btn btn_primary" href="#0") Все вопросы
+
+			section(class="index_info_column")
+				div(class="index_info_title")
+					div(class="index_info_icon")
+						include ../images/index/info.svg
+					h2 Полезная информация
+
+				h3(class="index_info_subtitle") Что такое норматив потребления?
+				p(class="index_info_text") Норматив потребления коммунальных услуг – это месячный объем (количество) потребления коммунальных ресурсов потребителем, используемый при определении размера платы за коммунальные услуги при отсутствии индивидуальных, общих (квартирных) приборов учета, а также в иных случаях, предусмотренных действующим законодательством. Нормативы регулируются, пересматриваются и определяются Региональной экономической комиссий Свердловской области.
+
+				a(class="btn btn_primary" href="#0") Вся полезная информация
+		section(class="index_newspaper")
+			div(class="container")
+				h2(class="index_newspaper_title") Наша Газета
+
+				ul(class="index_newspaper_list")
+					li(class="index_newspaper_item")
+						h3(class="index_newspaper_subtitle") Декабрь 2017
+						img(class="index_newspaper_image" src="./images/index/news01.webp" alt="Юг Энерго газета за Декабрь 2017" loading="lazy" width="180" height="255")
+						a(class="index_newspaper_link" href="#0") Скачать
+
+					li(class="index_newspaper_item")
+						h3(class="index_newspaper_subtitle") Ноябрь 2017
+						img(class="index_newspaper_image" src="./images/index/news02.webp" alt="Юг Энерго газета за Ноябрь 2017" loading="lazy" width="180" height="255")
+						a(class="index_newspaper_link" href="#0") Скачать
+
+					li(class="index_newspaper_item")
+						h3(class="index_newspaper_subtitle") Октябрь 2017
+						img(class="index_newspaper_image" src="./images/index/news01.webp" alt="Юг Энерго газета за Октябрь 2017" loading="lazy" width="180" height="255")
+						a(class="index_newspaper_link" href="#0") Скачать
+		section(class="index_form")
+			div(class="container")
+				h2(class="index_form_title")
+					span(class="text-gradient") Остались
+						b  Bопросы?
+
+				form(class="form")
+					div(class="form_column")
+						input(class="form_input" type="text" placeholder="Имя" )
+						input(class="form_input" type="text" placeholder="Телефон" )
+						input(class="form_input" type="email" placeholder="Email" )
+					div(class="form_column")
+						textarea(class="form_textarea"  placeholder="Комментарий")
+
+					button(class="btn btn_gradient" type="submit") Отправить
+	include components/footer
+
+

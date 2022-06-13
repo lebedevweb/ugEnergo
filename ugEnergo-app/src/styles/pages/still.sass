@@ -1,0 +1,41 @@
+.still
+	background-image: url(../images/bg.jpg)
+	background-repeat: no-repeat
+	background-position: center
+	background-size: cover
+	background-attachment: fixed
+	padding: 80px 8%
+
+	&_link
+		position: relative
+		box-sizing: border-box
+		display: flex
+		justify-content: space-between
+		align-items: center
+		width: 100%
+		text-decoration: none
+		background-color: $light
+		border-radius: 10px
+		box-shadow: 0 1px 5px rgba(119, 119, 119, 0.25)
+		padding: 4.16%
+
+		&:nth-child(n+2)
+			margin-top: 2.7%
+
+		& > h2
+			color: $primary
+			font-size: 18px
+
+			@media only screen and (max-width: 420px)
+				font-size: 14px
+
+		& > svg
+			display: block
+			fill: $primary
+			height: 30px
+			width: auto
+
+			@media only screen and (max-width: 420px)
+				height: 20px
+
+

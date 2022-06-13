@@ -1,0 +1,88 @@
+.notifications
+	padding: 90px 8%
+
+	&_nav
+		margin-bottom: 30px
+
+		& > ul
+			display: flex
+			list-style: none
+
+			& > li
+				display: block
+				margin-right: 20px
+
+				& > a
+					color: inherit
+
+				& > h1
+					font-size: 16px
+					font-weight: 400
+
+
+
+	&_list
+		list-style: none
+
+	&_item
+		@media only screen and (max-width: 420px)
+			font-size: 14px
+
+		&:nth-child(n+2)
+			margin-top: 20px
+
+		& a
+			color: $light
+
+	&_link
+		text-decoration: unset
+		display: block
+		color: $light
+		font-size: 18px
+		background: linear-gradient(360deg, rgba(54, 98, 255, 0.9) 3.13%, rgba(220, 115, 191, 0.9) 100%)
+		box-shadow: 0 1px 5px rgba(119, 119, 119, 0.25)
+		border-radius: 10px
+		padding: 3.33%
+
+		& > h2
+			font-size: 16px
+			margin-bottom: 10px
+
+			@media only screen and (max-width: 420px)
+				font-size: 14px
+
+		& > time
+			color: $secondary
+			font-size: 14px
+
+			@media only screen and (max-width: 420px)
+				font-size: 12px
+
+
+	&_header
+		margin-bottom: 20px
+
+		& > h1
+			font-size: 16px
+			margin-bottom: 10px
+
+			@media only screen and (max-width: 420px)
+				font-size: 14px
+
+		& > time
+			color: $secondary
+			font-size: 14px
+
+			@media only screen and (max-width: 420px)
+				font-size: 12px
+
+	&_body
+		& > *:nth-child(n+2)
+			margin-top: 20px
+
+		& > img
+			display: block
+			width: 100%
+
+		& > ul
+			list-style: none

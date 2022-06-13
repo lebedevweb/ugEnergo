@@ -1,0 +1,144 @@
+.header
+	position: fixed
+	left: 0
+	right: 0
+	top: 0
+	background: url('../images/header/header.webp') $primary no-repeat center
+		size: cover
+	padding-top: 10px
+	padding-bottom: 10px
+	z-index: 1000
+
+	&::before
+		content: ''
+		position: absolute
+		display: block
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5))
+
+	&_row
+		position: relative
+		display: flex
+		align-items: center
+		justify-content: space-between
+
+	&_logo
+		display: block
+		width: 300px
+
+		@media only screen and (max-width: 1680px)
+			width: 250px
+
+		@media only screen and (max-width: 1199px)
+			width: 200px
+
+		@media only screen and (max-width: 767px)
+			width: 150px
+
+		& > svg
+			fill: $light
+			width: 100%
+			height: auto
+
+	&_nav
+		@media only screen and (max-width: 1199px)
+			display: none
+
+	&_list
+		list-style: none
+		display: flex
+
+	&_item
+		position: relative
+
+		&:not(:first-child)
+			margin-left: 30px
+
+			@media only screen and (max-width: 1680px)
+				margin-left: 15px
+
+		&::before
+			content: ''
+			position: absolute
+			display: block
+			bottom: -6px
+			left: 0
+			height: 3px
+			width: 0
+			background: $gradient-first
+			transition: width .3s ease-out
+
+		&:hover::before
+			width: 100%
+
+		&.current::before
+			width: 100%
+
+		& > a
+			color: $light
+			font-family: $font-title
+			font-weight: 500
+			font-size: 18px
+			text-decoration: none
+
+			@media only screen and (max-width: 1680px)
+				font-size: 15px
+
+	&_buttons
+		display: flex
+
+		& > *:nth-child(n+2)
+			margin-left: 35px
+
+	&_search
+		cursor: pointer
+		width: 36px
+		height: 36px
+
+		@media only screen and (max-width: 1680px)
+			width: 30px
+			height: 30px
+
+		@media only screen and (max-width: 767px)
+			width: 24px
+			height: 24px
+
+
+		& > svg
+			fill: $light
+			width: 100%
+			height: auto
+
+	&_login
+		display: flex
+		align-items: center
+		cursor: pointer
+		height: 36px
+
+		@media only screen and (max-width: 1680px)
+			height: 30px
+
+		@media only screen and (max-width: 767px)
+			height: 24px
+
+		& > svg
+			fill: $light
+			height: 100%
+			width: auto
+
+		& > span
+			display: block
+			color: $light
+			font-size: 18px
+			margin-left: 7px
+
+			@media only screen and (max-width: 1680px)
+				font-size: 16px
+
+			@media only screen and (max-width: 767px)
+				display: none
+
+

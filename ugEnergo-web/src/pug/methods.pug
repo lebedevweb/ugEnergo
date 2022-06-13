@@ -1,0 +1,38 @@
+include components/head
+body
+	include components/header
+	main(class="methods")
+		div(class="container methods_row")
+			div(class="methods_left")
+				h1(class="methods_title") Способы передачи показаний
+				p(class="methods_text") 1. Личный кабинет ЕРЦ
+					b
+						a(class="methods_link" href="https://erc.ur.ru") erc.ur.ru
+				br
+				p(class="methods_text") 2. В приложении ЕРЦ
+					b
+						a(class="methods_link" href="https://play.google.com/store/apps/details?id=com.smedialink.ru.erc" target="_blank") Google Play
+					b
+						a(class="methods_link" href="https://www.erc.ur.ru/client/prilozhenie/prilozhenie.html" target="_blank") AppStore
+				br
+				p(class="methods_text") 3. По телефону ЕРЦ
+					b
+						a(class="methods_link" href="tel:+79676393044") +7 (967) 639-30-44
+					|  или
+					b
+						a(class="methods_link" href="tel:+79676393044") +7 (343) 346-60-44
+				br
+				p(class="methods_text") Напоминаем о сроках передачи показаний и оплате квитанций:
+				br
+				p(class="methods_text") ПЕРЕДАЧА ПОКАЗАНИЙ: с 22-го по 25-го числа каждого месяца
+				br
+				p(class="methods_text") ДОСТАВКА КВИТАНЦИЙ: до 01-го числа каждого месяца
+				br
+				p(class="methods_text") ОПЛАТА: до 10-го числа каждого месяца https://ug-energo.com/oplata
+
+
+			div(class="methods_right")
+				include components/topcontacts
+
+
+	include components/footer

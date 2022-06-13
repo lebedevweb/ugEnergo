@@ -1,0 +1,44 @@
+include components/head
+body
+	include components/header-back
+	main(class="contacts")
+		article(class="contacts_block")
+			h2(class="contacts_title") Офис:
+			p 620144, Свердловская область, г. Екатеринбург, ул. Радищева, д.6а, офис 801А (при себе иметь документ, удостоверяющий личность)
+
+		article(class="contacts_block")
+			h2(class="contacts_title") Телефоны:
+			h3(class="contacts_subtitle") Общий:
+			a(class="contacts_link" href="tel:+73433006516") +7 (343) 300-65-16
+			h3(class="contacts_subtitle") Аварийно - диспетчерская служба:
+			a(class="contacts_link" href="tel:+73432530112") +7 (343) 25-30-112
+			h3(class="contacts_subtitle") Справочный номер Единого Расчетного Центра:
+			a(class="contacts_link" href="tel:+73432147700") +7 (343) 214-77-00
+
+		article(class="contacts_block")
+			h2(class="contacts_title") Часы работы:
+			p
+				span(class="text-bold") ПН-ЧТ:
+				|  с 8-30 до 17-30
+			p
+				span(class="text-bold") ПТ:
+				|  с 8-30 до 17-00
+			p
+				span(class="text-bold") Перерыв:
+				|  c 12-30 до 13-30
+			p
+				span(class="text-bold") СБ-ВС:
+				|  выходной
+
+
+		article(class="contacts_row")
+			a(class="btn btn_outline" href="") Наш сайт
+			a(class="btn btn_outline" href="") WhatsApp
+			a(class="btn btn_outline" href="") Карта
+
+
+
+
+
+
+	include components/footer
